@@ -1,8 +1,16 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Hero from "../components/Hero";
+import Head from "next/head";
 
 export default function Home() {
-	return <div>Hello World!</div>;
+	return (
+		<div>
+			<Head>
+				<title>Photography Portfolio</title>
+			</Head>
+			<Hero
+				heading="Creative Photography"
+				message="Capturing moments, preserving memories - one shot at a time."
+			/>
+		</div>
+	);
 }
