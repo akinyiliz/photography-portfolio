@@ -23,7 +23,7 @@ const Slider = ({ slides }) => {
 	return (
 		<div
 			id="gallery"
-			className="max-w-[1240px] mx-auto"
+			className="max-w-[1240px] mx-auto mb-4"
 		>
 			<h1 className="text-4xl font-bold text-center p-4">Gallery</h1>
 
@@ -48,9 +48,11 @@ const Slider = ({ slides }) => {
 									src={slide.image}
 									alt="/"
 									width="700"
-									height="300"
+									height="100"
 									style={{
 										objectFit: "cover",
+										width: "auto",
+										height: "auto",
 									}}
 								/>
 							)}
