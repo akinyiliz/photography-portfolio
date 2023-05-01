@@ -1,5 +1,7 @@
 import Hero from "../components/Hero";
 import Head from "next/head";
+import Slider from "@/components/Slider";
+import { SliderData } from "@/components/SliderData";
 
 export default function Home() {
 	return (
@@ -11,6 +13,7 @@ export default function Home() {
 				heading="Creative Photography"
 				message="Capturing moments, preserving memories - one shot at a time."
 			/>
+			<Slider slides={SliderData} />
 		</div>
 	);
 }
