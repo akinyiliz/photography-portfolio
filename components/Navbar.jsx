@@ -47,7 +47,7 @@ function Navbar() {
 						<Link href="/#gallery">Gallery</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/portfolio">Work</Link>
+						<Link href="/work">Work</Link>
 					</li>
 					<li className="p-4">
 						<Link href="/contact">Contact</Link>
@@ -81,16 +81,28 @@ function Navbar() {
 					}
 				>
 					<ul>
-						<li className="p-4 text-4xl hover:text-gray-500">
+						<li
+							onClick={handleNav}
+							className="p-4 text-4xl hover:text-gray-500"
+						>
 							<Link href="/">Home</Link>
 						</li>
-						<li className="p-4 text-4xl hover:text-gray-500">
+						<li
+							onClick={handleNav}
+							className="p-4 text-4xl hover:text-gray-500"
+						>
 							<Link href="/#gallery">Gallery</Link>
 						</li>
-						<li className="p-4 text-4xl hover:text-gray-500">
+						<li
+							onClick={handleNav}
+							className="p-4 text-4xl hover:text-gray-500"
+						>
 							<Link href="/portfolio">Work</Link>
 						</li>
-						<li className="p-4 text-4xl hover:text-gray-500">
+						<li
+							onClick={handleNav}
+							className="p-4 text-4xl hover:text-gray-500"
+						>
 							<Link href="/contact">Contact</Link>
 						</li>
 					</ul>
