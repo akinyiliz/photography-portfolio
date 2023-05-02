@@ -62,7 +62,7 @@ function Navbar() {
 					{nav ? (
 						<AiOutlineClose
 							size={25}
-							style={{ color: `${textColor}` }}
+							style={{ color: "#ffffff" }}
 						/>
 					) : (
 						<AiOutlineMenu
