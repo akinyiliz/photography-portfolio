@@ -7,7 +7,7 @@ const work = () => {
 		<div>
 			<Hero
 				heading="My Work"
-				message="This is some of my recent work traveling around the world."
+				message="This is some of my recent work."
 			/>
 			<Portfolio />
 		</div>
