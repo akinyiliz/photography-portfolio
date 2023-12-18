@@ -1,72 +1,40 @@
-import React, { useState } from "react";
+import React from "react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import Image from "next/image";
-import { SliderData } from "./SliderData";
-import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
-import { previewData } from "next/dist/client/components/headers";
 
-const Slider = ({ slides }) => {
-	const [current, setCurrent] = useState(0);
-	const length = slides.length;
+import slides from "@/lib/slides";
 
-	const nextSlide = () => {
-		setCurrent(current === length - 1 ? 0 : current + 1);
-	};
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper/modules";
 
-	const prevSlide = () => {
-		setCurrent(current === 0 ? length - 1 : current - 1);
-	};
-
-	if (!Array.isArray(slides) || slides.length <= 0) {
-		return null;
-	}
-
-	return (
-		<div
-			id="gallery"
-			className="max-w-[1240px] mx-auto mb-4"
-		>
-			<h1 className="text-4xl font-bold text-center p-4">Gallery</h1>
-
-			<div className="relative flex justify-center">
-				{SliderData.map((slide, index) => {
-					return (
-						<div
-							key={index}
-							className={
-								index === current
-									? "opacity-[1] ease-in duration-300"
-									: "opacity-0"
-							}
-						>
-							<FaArrowCircleLeft
-								size={40}
-								className="absolute top-[50%] left-[30px] text-black  cursor-pointer select-none z-[2]"
-								onClick={prevSlide}
-							/>
-							{index === current && (
-								<Image
-									src={slide.image}
-									alt="/"
-									width="700"
-									height="100"
-									style={{
-										objectFit: "cover",
-										width: "auto",
-										height: "auto",
-									}}
-								/>
-							)}
-							<FaArrowCircleRight
-								size={40}
-								className="absolute top-[50%] right-[30px] text-black cursor-pointer select-none z-[2]"
-								onClick={nextSlide}
-							/>
-						</div>
-					);
-				})}
-			</div>
-		</div>
-	);
+const Slider = () => {
+  return (
+    <div id="gallery" className="max-w-[1240px] h-3/4 mx-auto mb-4">
+      <h1 className="text-4xl font-bold text-center p-4">Gallery</h1>
+      <Swiper
+        modules={[Navigation, Pagination, A11y]}
+        navigation
+        pagination={{ type: "fraction" }}
+        className="max-w-4xl mx-auto h-96 md:h-[600px] rounded-xl "
+      >
+        {slides.map((image, index) => (
+          <SwiperSlide key={index}>
+            <div className="h-full w-full flex items-center justify-center">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                className="block h-full w-full object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 };
 
 export default Slider;
