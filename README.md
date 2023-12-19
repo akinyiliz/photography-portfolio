@@ -67,8 +67,16 @@ Visit http://localhost:3000 in your browser.
 
 ## Usage
 
-Customize the portfolio content by replacing the sample images with the photographer's work. Modify the text and styling to match the desired aesthetic. Leverage the Next.js pages for additional sections, such as an about page or contact form.
+Customize the portfolio content by replacing the sample images with the photographer's work.
+
+Modify the text and styling to match the desired aesthetic.
+
+Leverage the Next.js pages for additional sections, such as an about page or contact form.
 
 ## Contribution
 
-This project is open to contributions and feedback. Fork the repository, make your changes, and submit a pull request. Please follow the project's coding standards and guidelines.
+This project is open to contributions and feedback.
+
+Fork the repository, make your changes, and submit a pull request.
+
+Please follow the project's coding standards and guidelines.
