@@ -1,6 +1,6 @@
 # Photography Portfolio
 
-This project is a photographer portfolio website built using Next.js, Tailwind CSS and random images from [unsplash.com](https://unsplash.com/) and Pexels.com to showcase the photographer's work.
+This project is a photographer portfolio website built using Next.js, Tailwind CSS and random images from [unsplash.com](https://unsplash.com/) and [pexels.com](https://www.pexels.com/) to showcase the photographer's work.
 
 The website is designed to be responsive, providing an optimal viewing experience across various devices.
 
