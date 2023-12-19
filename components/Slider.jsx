@@ -19,7 +19,7 @@ const Slider = () => {
         modules={[Navigation, Pagination, A11y]}
         navigation
         pagination={{ type: "fraction" }}
-        className="max-w-4xl mx-auto h-96 md:h-[600px] rounded-xl "
+        className="max-w-4xl mx-auto h-96 md:h-[500px] rounded-xl "
       >
         {slides.map((image, index) => (
           <SwiperSlide key={index}>
