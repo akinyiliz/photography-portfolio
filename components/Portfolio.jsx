@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import Photo1 from "../public/images/photo-1.jpg";
 import Photo2 from "../public/images/photo-2.jpg";
@@ -17,13 +17,7 @@ const Portfolio = () => {
       <h1 className="text-4xl font-bold p-4">Photos</h1>
       <div className="grid grid-rows-none p-4 md:grid-cols-5 gap-4">
         <div className="w-full h-full col-span-2 row-span-2 md:col-span-3">
-          <Image
-            src={Photo1}
-            alt="Man Smiling"
-            layout="responsive"
-            width="677"
-            height="451"
-          />
+          <Image src={Photo1} alt="Man Smiling" width="677" height="451" />
         </div>
 
         <div className="w-full h-full">
@@ -32,7 +26,6 @@ const Portfolio = () => {
             alt="Nature"
             width="215"
             height="217"
-            layout="responsive"
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -43,7 +36,6 @@ const Portfolio = () => {
             alt="Nature"
             width="215"
             height="217"
-            layout="responsive"
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -54,7 +46,6 @@ const Portfolio = () => {
             alt="Nature"
             width="215"
             height="217"
-            layout="responsive"
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -65,7 +56,6 @@ const Portfolio = () => {
             alt="Nature"
             width="215"
             height="217"
-            layout="responsive"
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -78,7 +68,6 @@ const Portfolio = () => {
             alt="Lady"
             width="215"
             height="300"
-            layout="responsive"
             style={{ objectFit: "cover" }}
             className="absolute"
           />
@@ -90,7 +79,6 @@ const Portfolio = () => {
             alt="Man with glasses holding his shirt collar"
             width="215"
             height="300"
-            layout="responsive"
             style={{ objectFit: "cover" }}
           />
         </div>
@@ -101,7 +89,6 @@ const Portfolio = () => {
             alt="Lady siting on a chair"
             width="215"
             height="300"
-            layout="responsive"
             style={{ objectFit: "cover" }}
             className="absolute"
           />
