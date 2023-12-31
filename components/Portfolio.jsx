@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import Photo1 from "../public/images/photo-1.jpg";
 import Photo2 from "../public/images/photo-2.jpg";
@@ -27,6 +27,7 @@ const Portfolio = () => {
             width="215"
             height="217"
             style={{ objectFit: "cover" }}
+            layout="responsive"
           />
         </div>
 
@@ -37,6 +38,7 @@ const Portfolio = () => {
             width="215"
             height="217"
             style={{ objectFit: "cover" }}
+            layout="responsive"
           />
         </div>
 
@@ -47,6 +49,7 @@ const Portfolio = () => {
             width="215"
             height="217"
             style={{ objectFit: "cover" }}
+            layout="responsive"
           />
         </div>
 
@@ -57,12 +60,13 @@ const Portfolio = () => {
             width="215"
             height="217"
             style={{ objectFit: "cover" }}
+            layout="responsive"
           />
         </div>
       </div>
 
       <div className="flex p-4 gap-4">
-        <div className="w-full relative">
+        <div className="w-full h-full relative">
           <Image
             src={Photo6}
             alt="Lady"
@@ -70,16 +74,18 @@ const Portfolio = () => {
             height="300"
             style={{ objectFit: "cover" }}
             className="absolute"
+            layout="responsive"
           />
         </div>
 
-        <div className="w-full h-full">
+        <div className="w-full h-full relative">
           <Image
             src={Photo7}
             alt="Man with glasses holding his shirt collar"
             width="215"
             height="300"
             style={{ objectFit: "cover" }}
+            layout="responsive"
           />
         </div>
 
@@ -91,6 +97,7 @@ const Portfolio = () => {
             height="300"
             style={{ objectFit: "cover" }}
             className="absolute"
+            layout="responsive"
           />
         </div>
       </div>
