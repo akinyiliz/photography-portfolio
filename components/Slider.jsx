@@ -27,6 +27,7 @@ const Slider = () => {
               <Image
                 src={image.src}
                 alt={image.alt}
+                priority
                 className="block h-full w-full object-cover"
               />
             </div>
